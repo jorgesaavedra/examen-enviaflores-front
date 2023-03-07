@@ -1,0 +1,126 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+
+.bg-primary{
+  background-color: var(--primario)!important;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+.navbar {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 400;
+}
+.navbar .navbar-nav .nav-item {
+  font-weight: bold;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: var(--primario);
+}
+.navbar .navbar-nav .nav-item .nav-link.active::after{
+  content: '';
+  border-bottom: 2px solid var(--primario);
+  display: block;
+}
+
+.navbar .navbar-nav .nav-item .profile-info {
+  width: 23em;
+}
+
+.navbar .navbar-nav .nav-item .profile-info .profile-header {
+  font-size: 3em;
+  background-color: #e6f4f8;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.btn-profile::after {
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primario);
+  text-transform: uppercase;
+}
+.btn-primary.btn-outline {
+  background-color: #ffffff;
+  border: solid 1px var(--primario);
+  color: var(--primario);
+  text-transform: uppercase;
+}
+
+.home {
+  padding: 4em;
+}
+@media (max-width: 475px) {
+  .home {
+    padding: 1em;
+  }
+  #app {
+    padding: 0;
+  }
+}
+
+.home .home-info {
+  padding: 1em;
+}
+
+.home .home-info .form-inline {
+  padding: 1em;
+  background-color: #f8f8f8;
+}
+
+.menu-login {
+  right: 0;
+  left: auto;
+}
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.multiselect-option.is-selected {
+  background: var(--primario);
+}
+.multiselect-option.is-selected:hover {
+  background: var(--secundario);
+}
+.heart-icon {
+  position: absolute;
+  right: 0.2em;
+  top: 0;
+  z-index: 1;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--primario);
+}
+.card-img-top {
+  height: 15em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
